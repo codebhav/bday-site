@@ -137,35 +137,44 @@ const panelVariantsSm = {
 const items = [
     {
         id: 1,
-        title: "Testimonial 1",
+        title: "Wish 1",
         Icon: FiUser,
-        testimonial:
-            "This is the best experience I ever had. The support was amazing!",
-        author: "John Doe",
-        spotifyLink: "https://open.spotify.com/track/7GhIk7Il098yCjg4BQjzvb",
+        testimonial: `
+        Happy birthday prongs!!
+
+I know we haven’t catched up in a while now, but there are times when I come across songs, movies or quotes which reminds me of you. And I think that’s how I would also describe you. A person so full of everything, and so cool at the same time. I’ll always cherish having gone to movies with you when you were in Bangalore. It was fun. 
+
+I hope you have a pretty amazing birthday!
+        `,
+        author: "Aseel",
+        spotifyLink:
+            "https://open.spotify.com/track/0vk78GBzDRMIrTsWzmA9rK?si=77ee157345a14696",
     },
     {
         id: 2,
-        title: "Testimonial 2",
+        title: "Wish 2",
         Icon: FiUser,
-        testimonial: "Really enjoyed it, highly recommended!",
-        author: "Jane Smith",
-        spotifyLink: "https://open.spotify.com/track/2TpxZ7JUBn3uw46aR7qd6V",
+        testimonial: `
+        अरे प्रोंग्स! हैप्पी बर्थडे हो!  आज ऐसन मस्ती करो कि पूरा मोहल्ला बोले, ‘एतना त शादियों में भी नाचल ना देखनी!’ केक एतना खा लो कि पेटवा बोले, ‘बस बहिन, अब गुड़-धनिया भेज के फिनिश कर द!’ और आज के दिन एतना नाचो कि धरती बोले, ‘हमरा प सिरवा मत फोड़!’ तुम्हारी उम्र अब ओ बटेर जइसन हो गइल बा – देखे में छोट, लेकिन धांसू एनर्जी से भरल! तो आज फुल भोजपुरिया ठुमका लगाओ, बाकी जिम्मेदारी कल देखल जाई!
+        `,
+        author: "Shwetank",
+        spotifyLink:
+            "https://open.spotify.com/track/6qvZFbqjr3S8Ck5aBkPXPu?si=Slnhc_XhSdeTov4OUZjStg",
     },
-    {
-        id: 3,
-        title: "Testimonial 3",
-        Icon: FiUser,
-        testimonial: "Such a great service, I will definitely come back.",
-        author: "Sarah Connor",
-        spotifyLink: "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp",
-    },
-    {
-        id: 4,
-        title: "Testimonial 4",
-        Icon: FiUser,
-        testimonial: "Absolutely fantastic, couldn't have asked for more.",
-        author: "Tony Stark",
-        spotifyLink: "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
-    },
+    // {
+    //     id: 3,
+    //     title: "Wish 3",
+    //     Icon: FiUser,
+    //     testimonial: "Such a great service, I will definitely come back.",
+    //     author: "Sarah Connor",
+    //     spotifyLink: "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp",
+    // },
+    // {
+    //     id: 4,
+    //     title: "Testimonial 4",
+    //     Icon: FiUser,
+    //     testimonial: "Absolutely fantastic, couldn't have asked for more.",
+    //     author: "Tony Stark",
+    //     spotifyLink: "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+    // },
 ];
