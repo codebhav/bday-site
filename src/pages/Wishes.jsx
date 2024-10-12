@@ -161,20 +161,35 @@ I hope you have a pretty amazing birthday!
         spotifyLink:
             "https://open.spotify.com/track/6qvZFbqjr3S8Ck5aBkPXPu?si=Slnhc_XhSdeTov4OUZjStg",
     },
-    // {
-    //     id: 3,
-    //     title: "Wish 3",
-    //     Icon: FiUser,
-    //     testimonial: "Such a great service, I will definitely come back.",
-    //     author: "Sarah Connor",
-    //     spotifyLink: "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp",
-    // },
-    // {
-    //     id: 4,
-    //     title: "Testimonial 4",
-    //     Icon: FiUser,
-    //     testimonial: "Absolutely fantastic, couldn't have asked for more.",
-    //     author: "Tony Stark",
-    //     spotifyLink: "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
-    // },
+    {
+        id: 3,
+        title: "Wish 3",
+        Icon: FiUser,
+        testimonial: `
+        Hi Sushiiii 
+I never knew that a girl with blue hair i met randomly on the first day of college would become so close to me. You gave me your shoulder to cry upon and took mine as well, that’s how perfect things look like 🤪
+IIM A is a beautiful place because of people like you ❤️
+
+Happy 24th 😘
+        `,
+        author: "Aasavari",
+        spotifyLink:
+            "https://open.spotify.com/track/1bAH37IFyHp9m9FVVsUEdu?si=b89f664a1add4b0b",
+    },
+    {
+        id: 4,
+        title: "Wish 4",
+        Icon: FiUser,
+        testimonial: `
+        Dear Sush, 
+
+Happy birthday!! You are the most talented, funny, loyal, fierce, and determined person we know. Also the smartest, thanks to all the puzzles, and the most knowledgeable about random whale facts. All your quirks and qualities make up this beautiful person that you are and that we love more than anything else in the world. It’s a privilege to have a front row seat in your life and watch you achieve all of these amazing things that you do everyday. Trust that we’re always always always cheering for you, and have got your back no matter what. We love you so much, and are so incredibly proud of you! 
+
+Lots of love, 
+Megs and Jaya
+        `,
+        author: "Megs and Jaya",
+        spotifyLink:
+            "https://open.spotify.com/track/2KL9XiVAGNiZBpWKdd8Iu1?si=mgDpi4hFSuyoccV8wBZtbw",
+    },
 ];
