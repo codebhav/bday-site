@@ -9,7 +9,7 @@ const VerticalAccordion = () => {
     return (
         <div className="min-h-screen bg-indigo-600 flex flex-row items-center justify-center">
             <section className="p-4 rounded-lg">
-                <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-4xl mx-auto shadow overflow-hidden">
+                <div className="flex flex-col lg:flex-row h-fit lg:h-[500px] w-full max-w-6xl mx-auto shadow overflow-hidden whitespace-pre-line">
                     {items.map((item) => {
                         return (
                             <Panel
@@ -166,7 +166,8 @@ I hope you have a pretty amazing birthday!
         title: "Wish 3",
         Icon: FiUser,
         testimonial: `
-        Hi Sushiiii 
+        Hi Sushiiii
+
 I never knew that a girl with blue hair i met randomly on the first day of college would become so close to me. You gave me your shoulder to cry upon and took mine as well, that’s how perfect things look like 🤪
 IIM A is a beautiful place because of people like you ❤️
 
@@ -181,15 +182,31 @@ Happy 24th 😘
         title: "Wish 4",
         Icon: FiUser,
         testimonial: `
-        Dear Sush, 
+        Dear Sush,
+        
+        Happy birthday!! You are the most talented, funny, loyal, fierce, and determined person we know. Also the smartest, thanks to all the puzzles, and the most knowledgeable about random whale facts. All your quirks and qualities make up this beautiful person that you are and that we love more than anything else in the world. It’s a privilege to have a front row seat in your life and watch you achieve all of these amazing things that you do everyday. Trust that we’re always always always cheering for you, and have got your back no matter what. We love you so much, and are so incredibly proud of you! 
 
-Happy birthday!! You are the most talented, funny, loyal, fierce, and determined person we know. Also the smartest, thanks to all the puzzles, and the most knowledgeable about random whale facts. All your quirks and qualities make up this beautiful person that you are and that we love more than anything else in the world. It’s a privilege to have a front row seat in your life and watch you achieve all of these amazing things that you do everyday. Trust that we’re always always always cheering for you, and have got your back no matter what. We love you so much, and are so incredibly proud of you! 
-
-Lots of love, 
+        Lots of love, 
 Megs and Jaya
         `,
         author: "Megs and Jaya",
         spotifyLink:
             "https://open.spotify.com/track/2KL9XiVAGNiZBpWKdd8Iu1?si=mgDpi4hFSuyoccV8wBZtbw",
+    },
+    {
+        id: 5,
+        title: "Wish 5",
+        Icon: FiUser,
+        testimonial: `
+        Happy Sushi Day!! 🍣 
+
+I hope your 24th is full of all the fun, happiness and positivity life can possibly offer!  But this year is even half as incredible as you are, it promises to be a real banger!! 🔥🎆
+(Sorry for the late wishes- I’ve just been out celebrating Sushi month- coz one day is too less for you, ya know? 👀👉👈)
+
+Happy Birthday Pineapple!! 🍍🍍🍍
+        `,
+        author: "Shreshth",
+        spotifyLink:
+            "",
     },
 ];

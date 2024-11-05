@@ -4,33 +4,33 @@ import { FiClock, FiPlus, FiTrash2 } from "react-icons/fi";
 import { motion } from "framer-motion";
 import NavBar from "./NavBar";
 
+const allowedUsernames = ["sushi", "prongs", "pwongs", "sush", "sushruti"];
+const password = "CockButAlsoBalls";
+
 const HomePage = () => {
-    const [todos, setTodos] = useState([
-        {
-            id: 1,
-            text: "I built",
-            checked: false,
-            time: "5 mins",
-        },
-        {
-            id: 2,
-            text: "you a custom",
-            checked: false,
-            time: "10 mins",
-        },
-        {
-            id: 3,
-            text: "todo list",
-            checked: true,
-            time: "12 hrs",
-        },
-        {
-            id: 4,
-            text: "hehe",
-            checked: false,
-            time: "1 hrs",
-        },
-    ]);
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn") === "true"
+    );
+    const [todos, setTodos] = useState(() => {
+        const savedTodos = localStorage.getItem("todos");
+        return savedTodos
+            ? JSON.parse(savedTodos)
+            : [
+                  { id: 1, text: "I built", checked: false, time: "5 mins" },
+                  {
+                      id: 2,
+                      text: "you a custom",
+                      checked: false,
+                      time: "10 mins",
+                  },
+                  { id: 3, text: "todo list", checked: true, time: "12 hrs" },
+                  { id: 4, text: "hehe", checked: false, time: "1 hrs" },
+              ];
+    });
+
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
 
     const handleCheck = (id) => {
         setTodos((pv) =>
@@ -42,16 +42,38 @@ const HomePage = () => {
         setTodos((pv) => pv.filter((t) => t.id !== id));
     };
 
+    const handleLogin = (username, passwordInput) => {
+        if (allowedUsernames.includes(username) && passwordInput === password) {
+            localStorage.setItem("isLoggedIn", "true");
+            setIsLoggedIn(true);
+        } else {
+            alert("Invalid credentials!");
+        }
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem("isLoggedIn");
+        setIsLoggedIn(false);
+    };
+
+    if (!isLoggedIn) {
+        return <Login onLogin={handleLogin} />;
+    }
+
     return (
         <>
             <section
                 className="min-h-screen bg-zinc-950 py-24"
-                style={{
-                    backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='%2318181b'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
-                }}
+                style={
+                    {
+                        /* your styles */
+                    }
+                }
             >
                 <div className="mx-auto w-full max-w-xl px-4">
-                    <NavBar />
+                    <button onClick={handleLogout} className="text-red-500">
+                        Logout
+                    </button>
                     <Header />
                     <Todos
                         removeElement={removeElement}
@@ -64,6 +86,38 @@ const HomePage = () => {
         </>
     );
 };
+
+const Login = ({ onLogin }) => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onLogin(username, password);
+    };
+
+    return (
+        <div className="login-container">
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    placeholder="Username"
+                />
+                <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    );
+};
+
+// Other components (Header, Form, Todos, Todo) remain the same
 
 const Header = () => {
     // Get the current hour
