@@ -15,12 +15,6 @@ export const PhotoParallax = () => {
                 root
                 options={{
                     lerp: 0.05,
-                    smoothWheel: true,
-                    smoothTouch: true,
-                    touchMultiplier: 2,
-                    wheelMultiplier: 1,
-                    gestureOrientation: "vertical",
-                    orientation: "vertical",
                 }}
             >
                 <Hero />
