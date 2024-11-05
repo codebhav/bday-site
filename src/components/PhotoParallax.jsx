@@ -5,7 +5,6 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion";
-import { SiSpacex } from "react-icons/si";
 import FrogAndToad from "./FrogAndToad";
 import { useRef } from "react";
 
@@ -15,10 +14,13 @@ export const PhotoParallax = () => {
             <ReactLenis
                 root
                 options={{
-                    // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
                     lerp: 0.05,
-                    //   infinite: true,
-                    // syncTouch: true,
+                    smoothWheel: true,
+                    smoothTouch: true,
+                    touchMultiplier: 2,
+                    wheelMultiplier: 1,
+                    gestureOrientation: "vertical",
+                    orientation: "vertical",
                 }}
             >
                 <Hero />
