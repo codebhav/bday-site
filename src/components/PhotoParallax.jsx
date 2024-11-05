@@ -18,7 +18,7 @@ export const PhotoParallax = () => {
                     // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
                     lerp: 0.05,
                     //   infinite: true,
-                    //   syncTouch: true,
+                    // syncTouch: true,
                 }}
             >
                 <Hero />

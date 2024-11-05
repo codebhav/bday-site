@@ -207,6 +207,6 @@ Happy Birthday Pineapple!! 🍍🍍🍍
         `,
         author: "Shreshth",
         spotifyLink:
-            "",
+            "https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA?si=FXIXgrwhQZOtpaYZj3CUNA&context=spotify%3Aalbum%3A1kCHru7uhxBUdzkm4gzRQc",
     },
 ];
